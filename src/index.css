@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Libre Baskerville', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to right, #45a247, #283c86);
+  background: linear-gradient(to right, #3b863c, #283c86);
   
 }
 
@@ -15,4 +15,8 @@ code {
 
 button{
   cursor: pointer;
+}
+
+.formbackground{
+  background:rgba(163, 163, 163, 0.082);
 }
