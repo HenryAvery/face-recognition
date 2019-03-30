@@ -14,12 +14,13 @@ import './App.css';
 const particlesOptions = {
   "particles": {
     "number": {
-        "value": 50
+      "value": 50,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
     },
-    "size": {
-        "value": 1
-    }
-  }
+}
 }
 
 const initialState = {
