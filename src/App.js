@@ -14,13 +14,18 @@ import './App.css';
 const particlesOptions = {
   "particles": {
     "number": {
-      "value": 50,
+      "value": 70,
       "density": {
         "enable": true,
-        "value_area": 800
+        "auto": true,
       }
     },
-}
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "bounce": false,
+    }
+  }
 }
 
 const initialState = {
@@ -36,7 +41,8 @@ const initialState = {
     password: '',
     entries: 0,
     joined: ''
-  }
+  },
+  "retina_detect": true
 }
 
 class App extends Component {
