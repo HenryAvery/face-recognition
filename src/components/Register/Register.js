@@ -23,7 +23,7 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('http://localhost:3001/register', {
+    fetch('https://lit-plains-17720.herokuapp.com/register', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -34,7 +34,7 @@ class Register extends React.Component {
     })
       .then(res => res.json())
       .then(user => {
-        if (user) {
+        if (user.id) {
           this.props.loadUser(user);
           this.props.onRouteChange('home');
         }
@@ -52,9 +52,9 @@ class Register extends React.Component {
                 <label className="db fw6 lh-copy f6" htmlFor="name">Name</label>
                 <input
                   className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100 "
-                  type="email"
+                  type="text"
                   name="name"
-                  id="email-address"
+                  id="name"
                   onChange={this.onNameChange}
                 />
               </div>
